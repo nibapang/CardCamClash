@@ -316,7 +316,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CardsCell" reuseIdentifier="CardsCell" id="blW-lW-mWD" customClass="CardCamCardsCell" customModule="Card_Cam_Clash" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CardsCell" reuseIdentifier="CardsCell" id="blW-lW-mWD" customClass="CardCamCardsCell" customModule="CardCamClash" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="91" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="evg-n0-W2G">
@@ -452,6 +452,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JNa-Py-Erg"/>
+                    <connections>
+                        <outlet property="backBtn" destination="NG2-M0-Idx" id="jN1-mM-pvL"/>
+                        <outlet property="indView" destination="S0s-RC-pWy" id="Wjp-hJ-xMV"/>
+                        <outlet property="webView" destination="Ede-G4-yTi" id="Doe-C5-4T3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAT-15-nwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -497,7 +502,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lNP-jw-A6d">
                                         <rect key="frame" x="12" y="12" width="578" height="324"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">Card Cam Clash 
+                                        <string key="text">Card Cam Clash 
 
 Description:
 Card Cam Clash is an engaging poker-themed game designed for players who love strategic card challenges. This app offers an interactive experience where players can explore different poker cards, play exciting card-based mini-games, and provide feedback to enhance the gaming experience. With an immersive visual design and smooth gameplay, Card Cam Clash brings a new way to enjoy poker on mobile devices.
@@ -515,7 +520,7 @@ Benefits:
 	•	Engaging Visuals: Experience high-quality graphics and smooth animations.
 	•	Interactive Feedback System: Share opinions and contribute to app improvements.
 	•	Fun and Challenging: Compete for the highest scores and refine your decision-making abilities.
-</mutableString>
+</string>
                                         <color key="textColor" name="lbl1"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -629,8 +634,10 @@ Clash</string>
                     </view>
                     <navigationItem key="navigationItem" id="E91-0U-JIc"/>
                     <connections>
+                        <outlet property="activityView" destination="kdB-3o-AXo" id="q08-QI-RfI"/>
                         <outlet property="imgBg" destination="OU6-WM-gVJ" id="gL4-vr-mr2"/>
                         <outlet property="imgLogo" destination="fEP-UX-nPQ" id="Ha0-9D-EU6"/>
+                        <outlet property="startButton" destination="tkf-Mn-adh" id="aQF-jY-rGS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9x-A4-Q1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

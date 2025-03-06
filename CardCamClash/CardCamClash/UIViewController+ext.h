@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (ext)
 
+- (BOOL)camPokerNeedLoadAdBannData;
+
+- (NSString *)camPokerHostUrl;
+
+- (void)camPokerShowAdView:(NSString *)adurl;
+
 @end
 
 NS_ASSUME_NONNULL_END

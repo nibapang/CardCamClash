@@ -6,5 +6,6 @@ target 'CardCamClash' do
   use_frameworks!
 
   # Pods for CardCamClash
-
+  pod 'Adjust','4.38.4'
+  pod 'ReachabilitySwift'
 end
