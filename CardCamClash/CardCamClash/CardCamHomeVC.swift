@@ -30,7 +30,7 @@ class CardCamHomeVC: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func btnShareApp(_ sender: Any) {
-        let appID = "YOUR_APP_ID"
+        let appID = "6742887869"
         let appURL = "https://apps.apple.com/app/id\(appID)"
         let message = "Check out Card Cam Clash on the App Store!"
         

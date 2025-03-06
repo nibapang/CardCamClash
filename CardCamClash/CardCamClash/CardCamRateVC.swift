@@ -46,6 +46,10 @@ class CardCamRateVC: UIViewController {
         
     }
     
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func btnRate(_ sender: Any) {
         
         SKStoreReviewController.requestReview()
